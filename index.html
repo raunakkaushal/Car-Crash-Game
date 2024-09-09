@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Racing Game</title>
+    <link rel="shortcut icon" href="img/fevicon-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="animation-container">
+            <img id="gif" src="img/giphy.gif" alt="Animation">
+            <img id="image" src="img/anime-screen.gif" alt="Image">
+            <button id="start-btn" class="start-button">Play</button>
+        </div>
+        <div class="container">
+            <div class="track track1">
+                <div class="car car-1">
+                    <img id="car-img-1" src="img/car.png" alt="Car">
+                </div>
+            </div>
+            <div class="track track2">
+                <div class="car car-2">
+                    <img id="car-img-2" src="img/car.png" alt="Car">
+                </div>
+            </div>
+            <div class="track track3">
+                <div class="car car-3">
+                    <img id="car-img-3" src="img/car.png" alt="Car">
+                </div>
+            </div>
+        </div>
+        <div class="score">
+            <h3>Score: <span id="score">0</span></h3>
+        </div>
+        <div class="button-section">
+            <button class="left-btn">Left</button>
+            <button class="right-btn">Right</button>
+        </div>
+        <div class="game-over" id="game-over-screen">
+            <h1>Game Over</h1>
+            <p>Your Score: <span id="final-score"></span></p>
+            <button id="restart-btn">Restart</button>
+        </div>
+    </div>
+
+    <!-- redirect box -->
+    <div class="redirect-box">
+        <button class="redirect">
+            <p class="tooltip">Click On Me I'll Redirect You to Homepage</p>
+            <a href="https://github.com/raunakkaushal" target="_blank"><img id="hacker-img" src="img/hacker.png" alt=""></a>
+        </button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
